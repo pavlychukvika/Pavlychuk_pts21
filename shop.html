@@ -8,7 +8,8 @@
 
 </head>
 <body>
-
+<script src="script.js" defer></script>
+<script src="popup.js" defer></script>
 <header class="header">
     <div class="header_line">
         <div class="container">
@@ -44,7 +45,7 @@
                     </nav>
                 </div>
 
-                <script src="script.js"></script>
+
                 <nav class="nav">
                     <a class="nav_link active" href="#">
                         Home
@@ -329,12 +330,13 @@
             </div>
             <div class="footer__block">
                 <nav class="nav nav_footer">
-                    <a class="nav_link" href="#">
-                        contacts
+                    <a class="nav_link open-popup" href="#">
+                        contacts us
                     </a>
-                    <a class="nav_link" href="#">
+                    <a class="nav_link button" href="#">
                         privacy policy
                     </a>
+
                 </nav>
             </div>
 
@@ -342,5 +344,31 @@
     </div>
 
 </footer>
+
+<div class="popup__bg">
+    <form class="popup">
+        <img src="img/close.png" class="close-popup">
+        <label>
+            <input type="text" name="name">
+            <div class="label__text">
+                Name
+            </div>
+        </label>
+        <label>
+            <input type="tel" name="tel">
+            <div class="label__text">
+               Email
+            </div>
+        </label>
+        <label>
+            <textarea name="message"></textarea>
+            <div class="label__text">
+                Your message
+            </div>
+        </label>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
 </body>
 </html>
