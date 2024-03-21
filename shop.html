@@ -18,7 +18,7 @@
                     <a href="#">Ua</a>
                     <a href="#" class="active">En</a>
                 </div>
-                <a class="header_phone" href="#">+380100000</a>
+                <a class="header_phone open-popup" href="#">contact us</a>
 
             </div>
         </div>
@@ -26,7 +26,7 @@
     <div class="container">
         <div class="header_wrapper">
             <div class="header_block">
-
+            <div id="btn_wrapper" class="btn_wrapper">
                 <div class="menu-btn">
                     <span></span>
                     <span></span>
@@ -37,27 +37,27 @@
                     <nav>
                         <ul class="menu-list">
 
-                            <li><a class="menu-link" href="#">Home</a></li>
-                            <li><a class="menu-link" href="#">about</a></li>
-                            <li><a class="menu-link" href="#">menu</a></li>
-                            <li><a class="menu-link" href="#">resevation</a></li>
+                            <li><a class="menu-link" href="#home">Home</a></li>
+                            <li><a class="menu-link" href="#catalog">catalog</a></li>
+                            <li><a class="menu-link" href="#news">news</a></li>
+                            <li><a class="menu-link" href="#about">about</a></li>
                         </ul>
                     </nav>
                 </div>
 
-
+            </div>
                 <nav class="nav">
-                    <a class="nav_link active" href="#">
+                    <a class="nav_link active" href="#home">
                         Home
                     </a>
-                    <a class="nav_link" href="#">
+                    <a class="nav_link" href="#catalog">
+                        catalog
+                    </a>
+                    <a class="nav_link" href="#news">
+                        news
+                    </a>
+                    <a class="nav_link" href="#about">
                         about
-                    </a>
-                    <a class="nav_link" href="#">
-                        menu
-                    </a>
-                    <a class="nav_link" href="#">
-                        resevation
                     </a>
                 </nav>
             </div>
@@ -86,7 +86,7 @@
     </div>
 </header>
 
-<div class="intro" style="background-image: url('img/hero_img.png')" >
+<div id="home" class="intro" style="background-image: url('img/hero_img.png')">
     <div class="container">
         <div class="intro__wrapper">
             <div class="intro__block">
@@ -130,7 +130,7 @@
 </div>
 
 <div class="container">
-    <h2 class="block__title">
+    <h2 id="catalog" class="block__title">
         Catalog
     </h2>
 
@@ -248,7 +248,7 @@
 </div>
 
 <div class="container">
-    <h2 class="block__title">
+    <h2 id="news" class="block__title">
         news
     </h2>
 
@@ -272,16 +272,16 @@
         <div class="news__block">
             <a class="news__item" href="#">
                 <img class="news__img" src="img/coffee.png" alt="news 2">
-               <div class="news_content">
-                   <h3 class="news__title">
-                       Lavazza coffee
-                   </h3>
-                   <h4 class="news__text">
-                       There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                       alteration in some form, by injected humour, or randomised words which don't look even slightly
-                       believable. words which don't look even slightly believable.
-                   </h4>
-               </div>
+                <div class="news_content">
+                    <h3 class="news__title">
+                        Lavazza coffee
+                    </h3>
+                    <h4 class="news__text">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. words which don't look even slightly believable.
+                    </h4>
+                </div>
             </a>
         </div>
 
@@ -304,6 +304,19 @@
     </div>
 </div>
 
+<div class="container">
+    <h2 id="about" class="block__title">
+        About
+    </h2>
+    <div class="about__wrapper">
+        <iframe class="video"
+            src="https://www.youtube.com/embed/dpeSld41HXQ?list=PLDGzUwGPx004LPtso0NNKZii7kHcSRfOn"
+            title="Lavazza A Modo Mio Fantasia - Machine presentation | Lavazza" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+</div>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
@@ -314,28 +327,26 @@
             </div>
             <div class="footer__block">
                 <nav class="nav nav_footer">
-                    <a class="nav_link" href="#">
+                    <a class="nav_link" href="#home">
                         Home
                     </a>
-                    <a class="nav_link" href="#">
+                    <a class="nav_link" href="#catalog">
+                        catalog
+                    </a>
+                    <a class="nav_link" href="#news">
+                        news
+                    </a>
+                    <a class="nav_link" href="#about">
                         about
-                    </a>
-                    <a class="nav_link" href="#">
-                        menu
-                    </a>
-                    <a class="nav_link" href="#">
-                        resevation
                     </a>
                 </nav>
             </div>
             <div class="footer__block">
                 <nav class="nav nav_footer">
-                    <a class="nav_link open-popup" href="#">
+                    <a class="nav_link open-popup ">
                         contacts us
                     </a>
-                    <a class="nav_link button" href="#">
-                        privacy policy
-                    </a>
+
 
                 </nav>
             </div>
@@ -357,7 +368,7 @@
         <label>
             <input type="tel" name="tel">
             <div class="label__text">
-               Email
+                Email
             </div>
         </label>
         <label>

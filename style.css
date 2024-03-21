@@ -13,6 +13,7 @@ img {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .btn {
@@ -27,6 +28,8 @@ a {
     letter-spacing: 0.1em;
     border-radius: 10px;
     transition: background-color .2s ease;
+    cursor: pointer;
+
 }
 
 .btn-main {
@@ -63,6 +66,11 @@ body {
 
 .header {
     border-bottom: 1px solid #32323D;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    background-color: black;
 }
 
 .header_line {
@@ -118,8 +126,15 @@ body {
 }
 
 .nav_footer {
-    flex-direction: column;
-    align-items: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-top: 25px;
+    gap: 50px;
+
+
 }
 
 .nav_footer .nav_link {
@@ -179,6 +194,7 @@ body {
 
 
 /*burger*/
+
 .menu-btn {
     display: none;
     background: none;
@@ -266,6 +282,7 @@ body {
 .intro {
     width: 100%;
     margin-bottom: 60px;
+
     background-repeat: no-repeat;
     background-size: auto;
     position: relative;
@@ -524,6 +541,21 @@ body {
 
 /*/news*/
 
+/*about*/
+.about__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px 80px;
+}
+
+.video{
+    width: 1200px;
+    height: 664px;
+}
+
+
+/*/about*/
 
 /*footer*/
 .footer {
@@ -554,7 +586,7 @@ body {
 /*/footer*/
 
 /*popup*/
-/* Важная часть */
+
 .popup__bg {
     position: fixed;
     top: 0;
@@ -580,18 +612,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
-    width: 400px;
+    width: 600px;
     padding: 25px;
     transition: 0.5s all;
 }
 
 .popup.active {
     transform: translate(-50%, -50%) scale(1);
-     transition: 0.5s all;
+    transition: 0.5s all;
 }
 
-/* Конец важной части */
-/* Далее код для стилизации формы */
+
 .close-popup {
     position: absolute;
     top: 10px;
@@ -623,11 +654,11 @@ body {
 }
 
 .popup input:focus {
-    border-bottom: 1px solid #C7A17A;
+    border-bottom: 1px solid #d08d49;
 }
 
 .popup input:focus + .label__text {
-    color: #C7A17A;
+    color: #d08d49;
 }
 
 .popup textarea {
@@ -642,11 +673,11 @@ body {
 }
 
 .popup textarea:focus {
-    border-bottom: 1px solid #C7A17A;
+    border-bottom: 1px solid #d08d49;
 }
 
 .popup textarea:focus + .label__text {
-    color: #C7A17A;
+    color: #d08d49;
 }
 
 .popup button {
@@ -657,8 +688,8 @@ body {
     justify-content: center;
     color: #fff;
     font-size: 18px;
-    border: 2px solid #C7A17A;
-    background: #C7A17A;
+    border: 2px solid #d08d49;
+    background: #d08d49;
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s all;
@@ -704,6 +735,7 @@ body {
     }
 
     .intro__wrapper {
+        padding-top: 90px;
         min-height: 520px;
     }
 
@@ -727,6 +759,10 @@ body {
         display: none;
     }
 
+    .video{
+        height: 410px;
+    }
+
     .menu-btn {
         display: block;
         width: 40px;
@@ -734,6 +770,8 @@ body {
         position: relative;
         z-index: 6;
         overflow: hidden;
+        cursor: pointer;
+
     }
 
     .menu-btn span {
@@ -767,6 +805,10 @@ body {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .popup {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -790,6 +832,10 @@ body {
         margin: 0 -10px 20px;
     }
 
+    .video{
+        height: 270px;
+    }
+
     .footer__wrapper {
         flex-direction: column;
     }
@@ -808,6 +854,15 @@ body {
         display: none;
     }
 
+
+
+}
+
+@media screen and (max-width: 540px) {
+    .intro__wrapper {
+        padding-top: 140px;
+
+    }
 }
 
 /*/media*/
